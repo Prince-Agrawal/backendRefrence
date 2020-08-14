@@ -1,0 +1,22 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient y2="Infinity" y1="Infinity" x2="Infinity" x1="Infinity" id="SVGID_1_">
+   <stop stop-color="#FFCA05" offset="0"/>
+   <stop stop-color="#FAAC18" offset="1"/>
+  </linearGradient>
+  <linearGradient y2="Infinity" y1="Infinity" x2="Infinity" x1="Infinity" id="SVGID_2_">
+   <stop stop-color="#FAAC18" offset="0"/>
+   <stop stop-color="#FFCA05" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle stroke="null" id="svg_3" r="141.479431" fill="url(#SVGID_1_)" cy="255.452052" cx="255.452042"/>
+  <path stroke="null" id="svg_4" fill="url(#SVGID_2_)" d="m255.452055,389.333865c-73.217534,0 -132.785388,-59.568184 -132.785388,-132.785394c0,-73.217528 59.567854,-132.785376 132.785388,-132.785376c73.220516,0 132.785394,59.567854 132.785394,132.785376c0,73.217211 -59.564879,132.785394 -132.785394,132.785394z"/>
+  <path stroke="null" id="svg_6" fill="#FFFFFF" d="m255.452054,152.438356c-58.103355,0 -105.205479,47.101659 -105.205479,105.205479c0,58.103355 47.102123,105.205479 105.205479,105.205479c58.103811,0 105.205479,-47.102123 105.205479,-105.205479c0,-58.10382 -47.101668,-105.205479 -105.205479,-105.205479zm4.383106,177.019212l-8.767132,0l0,-112.212637l8.767132,0l0,112.212637zm0,-128.039276l-8.767132,0l0,-15.586779l8.767132,0l0,15.586779z"/>
+ </g>
+</svg>

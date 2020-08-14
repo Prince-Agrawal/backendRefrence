@@ -1,0 +1,241 @@
+.text-area-container {
+    margin-bottom: 1rem;
+    width: auto;
+    height: auto;
+    max-width: 22rem;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.text-area-container .area-name {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.85);
+    float: left;
+}
+
+.text-area-container .area-name div {
+    float: left;
+}
+
+.text-area-container .area-name .tips-box {
+    margin-left: 0.5rem;
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.text-area-container .area-name .tips-box button {
+    padding: 0rem;
+    width: 1rem;
+    height: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-image: url("../../../../../Assets/Images/tips-icon.png");
+    background-size: cover;
+    cursor: pointer;
+    float: left;
+}
+
+.text-area-container .area-name .tips-box .content {
+    padding: 0.5rem 0.75rem;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    position: absolute;
+    transform: translateX(2.5rem);
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(92, 99, 105, 0.15);
+    background-color: #fff;
+    float: left;
+}
+
+.text-area-container .area-name .tips-box .content::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0.5rem;
+    left: -1rem;
+    border-top: 1rem solid white;
+    border-left: 1rem solid transparent;
+    background-color: transparent;
+    float: left;
+}
+
+.text-area-container .area-name .tips-box .content .title {
+    /* margin: 0rem 0.25rem; */
+    width: auto;
+    height: auto;
+    font-size: 1.15rem;
+    display: block;
+    float: left;
+}
+
+.text-area-container .area-name .tips-box .content .checklist {
+    margin-top: 0.5rem;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 0.25rem;
+    float: left;
+}
+
+.text-area-container .area-name .tips-box .content .checklist .item {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.text-area-container .area-name .tips-box .content .checklist .item img {
+    margin-left: -0.25rem;
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    float: left;
+}
+
+.text-area-container .area-name .tips-box .content .text-description {
+    margin-top: 0.5rem;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 1rem;
+}
+
+.text-area-container .area-box,
+.text-area-container .area-box-error,
+.text-area-container .area-box-disable {
+    padding: 0 0.75rem;
+    width: inherit;
+    height: calc(7rem + 2px);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    float: left;
+    transition: all 0.15s;
+}
+
+.text-area-container .area-box-error {
+    border-color: #dc3545;
+}
+
+.text-area-container .area-box-disable {
+    color: #dcdcdc;
+    background-color: #ececec;
+    border: 1px solid #d8d8d8;
+}
+
+.text-area-container .area-box:focus-within {
+    border-color: #0050a7;
+    box-shadow: 0 0 0 0.2rem rgba(0, 61, 128, 0.25);
+}
+
+.text-area-container .area-box-error:focus-within {
+    box-shadow: 0 0 0 0.2rem rgba(166, 29, 42, 0.25);
+}
+
+.text-area-container .area-box .area,
+.text-area-container .area-box-error .area,
+.text-area-container .area-box-disable .area {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #373c42;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    float: left;
+}
+
+.text-area-container .area-box img,
+.text-area-container .area-box-error img,
+.text-area-container .area-box-disable img {
+    width: 24px;
+    height: 24px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    float: right;
+}
+
+.text-area-container .helper-text,
+.text-area-container .helper-text-error,
+.text-area-container .helper-text-disable {
+    margin-top: 0.25rem;
+    width: inherit;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    font-size: 0.75rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+    text-align: left;
+    float: left;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.text-area-container .helper-text-error {
+    color: #dc3545;
+}
+
+.text-area-container .helper-text-disable {
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.text-area-container .area-box .prefix,
+.text-area-container .area-box-error .prefix,
+.text-area-container .area-box-disable .prefix {
+    margin-right: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.35);
+    font-family: sans-serif;
+}
+
+.text-area-container .area-box .suffix,
+.text-area-container .area-box-error .suffix,
+.text-area-container .area-box-disable .suffix {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.35);
+    font-family: sans-serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 2.25rem white inset !important;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(0, 0, 0, 0.4);
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(0, 0, 0, 0.4);
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(0, 0, 0, 0.4);
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(0, 0, 0, 0.4);
+}

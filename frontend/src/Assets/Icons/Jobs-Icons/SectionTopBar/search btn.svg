@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.749" height="24.749" viewBox="0 0 24.749 24.749">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="24.749" height="24.749" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="shape" d="M7,21a1,1,0,0,1-1-1V14l0-.071a7,7,0,1,1,1.994,0L8,14v6A1,1,0,0,1,7,21ZM7,2a5,5,0,0,0-.935,9.914l.221.036.714.1.715-.1A5,5,0,0,0,12,7.226L12,7A5.006,5.006,0,0,0,7,2Z" transform="translate(-0.5 9.879) rotate(-45)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="search_btn" data-name="search btn" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="shape-2" data-name="shape" d="M7,21a1,1,0,0,1-1-1V14l0-.071a7,7,0,1,1,1.994,0L8,14v6A1,1,0,0,1,7,21ZM7,2a5,5,0,0,0-.935,9.914l.221.036.714.1.715-.1A5,5,0,0,0,12,7.226L12,7A5.006,5.006,0,0,0,7,2Z" transform="translate(0 9.9) rotate(-45)" fill="none"/>
+    <g transform="translate(0.5 0.021)" clip-path="url(#clip-path-2)">
+      <g id="_Color" data-name="🎨  Color" clip-path="url(#clip-path-3)">
+        <rect id="Rectangle" width="24" height="24" fill="#979797"/>
+      </g>
+    </g>
+  </g>
+</svg>

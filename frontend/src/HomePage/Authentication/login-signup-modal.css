@@ -1,0 +1,236 @@
+.modal-container {
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    float: left;
+}
+
+.modal-container .modal-background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    float: left;
+}
+
+.modal-container .modal {
+    width: calc(100vw - 15rem);
+    height: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(92, 99, 105, 0.15);
+    overflow: hidden;
+    float: left;
+    opacity: 0;
+    animation: modalMoveIn 0.5s ease-out forwards;
+    overflow: auto;
+}
+
+@keyframes modalMoveIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.modal-container .modal .left-section {
+    background-size: cover;
+    background-image: url("../../Assets/Images/login-modal-image.png");
+    float: left;
+}
+
+.modal-container .modal .right-section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.modal-container .title,
+.modal-container .title-ul {
+    margin: 0rem 0rem 1.25rem;
+    width: 100%;
+    height: auto;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 3rem;
+    font-weight: normal;
+    float: left;
+}
+
+.modal-container .title-ul {
+    padding: 0rem 0rem 1rem;
+    margin: 0rem 0rem 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.modal-container .sub-title {
+    margin: 0rem 0rem 4rem;
+    width: 100%;
+    height: auto;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    float: left;
+}
+
+.modal-container .get-started-section {
+    padding: 3rem 3.5rem;
+    width: calc(100% - 7rem);
+    height: calc(100% - 6rem);
+    float: left;
+}
+
+.modal-container .blank-space-approx-4rem {
+    width: 100%;
+    height: 3.5rem;
+}
+
+.modal-container .get-started-section .content-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.modal-container .get-started-section .content-section .btn-stack {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-row-gap: 1.25rem;
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+}
+
+.modal-container .get-started-section .content-section .btn {
+    padding: 0.5rem 1rem;
+    width: 16rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    border-radius: 0.3rem;
+    outline: none;
+    cursor: pointer;
+    float: left;
+}
+
+.modal-container .get-started-section .content-section .btn:nth-child(2) {
+    background-color: #0e76a8;
+    color: #fff;
+}
+
+.modal-container .get-started-section .content-section .btn img {
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+    width: 24px;
+    height: 24px;
+    float: left;
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.modal-container .get-started-section .content-section .or-line {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #003233;
+}
+
+.modal-container .get-started-section .content-section .or-line::before,
+.modal-container .get-started-section .content-section .or-line::after {
+    content: "";
+    margin: 0rem 0.5rem;
+    width: 5rem;
+    height: 1.5px;
+    background-color: rgba(0, 50, 51, 0.64);
+    border-radius: 1px;
+}
+
+.modal-container .get-started-section .content-section .outline-btn-holder {
+    margin: 2rem 0rem;
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.85);
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
+.modal-container .get-started-section .content-section .outline-btn-holder .outline-btn {
+    padding: 0rem;
+    margin: 0rem;
+    width: auto;
+    height: auto;
+    margin-left: 0.5rem;
+    color: #003233;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: 0.3rem;
+    transform: translateY(-0.15rem);
+    border: none;
+    float: left;
+}
+
+.modal-container .get-started-section .content-section .back-btn {
+    padding: 0rem;
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.modal-container .get-started-section .content-section .back-btn::before {
+    content: "";
+    /* margin-right: 0.25rem; */
+    width: 1.5rem;
+    height: 1.5rem;
+    /* position: absolute; */
+    background-image: url("../../Assets/Images/chevron-left-icon.png");
+    background-size: contain;
+    float: left;
+}
+
+.modal-container form {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.modal-container form .checkbox-holder {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    float: left;
+}

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* To remove the time column from Agenda tab on /client/interview route */
+
+.rbc-agenda-view table.rbc-agenda-table thead>tr>th:nth-child(2),
+.rbc-agenda-view table.rbc-agenda-table .rbc-agenda-time-cell {
+    display: none !important;
+}

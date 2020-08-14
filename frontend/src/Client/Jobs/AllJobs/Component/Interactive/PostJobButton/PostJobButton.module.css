@@ -1,0 +1,65 @@
+.Top {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: fixed;
+    bottom: 2.2rem;
+    right: 2.2rem;
+    z-index: 200;
+    border-radius: 50%;
+    background-color: #10299c;
+    background-image: url("../../../../../../Assets/Icons/Jobs-Icons/Post-Job/PostJobIcon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden ! important;
+    overflow-x: hidden ! important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -5px -3px;
+    transition: transform 0.3s ease;
+}
+
+.Bottom {
+    display: none;
+    width: 0;
+    position: fixed;
+    transition: width 0.3s ease;
+    height: 2.5rem;
+    width: 0;
+    bottom: 2.2rem;
+    right: 2.2rem;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: 0 2rem 2rem 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #10299c;
+    padding: .65rem .5rem .65rem 0rem;
+    font-size: 0;
+    overflow: hidden;
+    text-align: end;
+}
+
+.BottomHover {
+    display: block !important;
+    width: 5.5rem !important;
+    font-size: 1rem;
+    font-weight: 700;
+    animation: fadeIn 0.3s ease;
+}
+
+.MoveLeft {
+    transform: translateX(-4.5rem);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        width: 0;
+        font-size: 0;
+    }
+    100% {
+        opacity: 1;
+        font-size: 1rem;
+        width: 5.5rem;
+    }
+}

@@ -1,0 +1,12 @@
+.TertiaryButton {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #10299C;
+    background-color: transparent;
+    color: #10299C;
+    font-size: inherit;
+    cursor: pointer;
+    padding: .2rem;
+    border-radius: 4px;
+}

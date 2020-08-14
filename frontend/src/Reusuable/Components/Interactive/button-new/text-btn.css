@@ -1,0 +1,30 @@
+.contained-btn,
+.outline-btn,
+.text-btn {
+  padding: 0.5rem 1rem;
+  margin: 0.75rem 0rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  outline: none;
+  cursor: pointer;
+  float: left;
+}
+.contained-btn {
+  color: #fff;
+  background-color: #003233;
+  border-color: #003233;
+}
+.outline-btn {
+  color: #003233;
+  background-color: transparent;
+}
+.text-btn {
+  color: #fff;
+  border: none;
+  background-color: transparent;
+}
